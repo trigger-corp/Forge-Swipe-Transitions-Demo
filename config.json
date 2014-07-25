@@ -1,16 +1,27 @@
 {
-	"author": "tim@trigger.io", 
-	"config_version": "2", 
-	"description": "A gestures/transitions demo", 
-	"modules": {
-		"is": true, 
-		"logging": {
-			"level": "DEBUG"
-		}, 
-		"reload": true, 
-		"tools": true
-	}, 
-	"name": "Flickr flicker", 
-	"platform_version": "v1.4", 
-	"version": "0.1"
+    "config_version": "4",
+    "name": "Flickr flicker",
+    "author": "tim@trigger.io",
+    "version": "0.2",
+    "platform_version": "v2.1.7",
+    "description": "A gestures/transitions demo",
+    "core": {
+        "general": {
+            "logging": {
+                "level": "DEBUG"
+            },
+            "reload": true
+        }
+    },
+    "modules": {
+        "request": {
+            "version": "2.5",
+            "config": {
+                "permissions": []
+            }
+        },
+        "file": {
+            "version": "2.4"
+        }
+    }
 }
